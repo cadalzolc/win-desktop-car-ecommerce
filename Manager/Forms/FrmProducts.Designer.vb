@@ -28,7 +28,7 @@ Partial Class FrmProducts
         Me.PnlFooter = New System.Windows.Forms.Panel()
         Me.PnllBody = New System.Windows.Forms.Panel()
         Me.TxtSearch = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnSearch = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BtnCreate = New System.Windows.Forms.Button()
@@ -71,6 +71,7 @@ Partial Class FrmProducts
         '
         Me.GrdList.AllowUserToAddRows = False
         Me.GrdList.AllowUserToDeleteRows = False
+        Me.GrdList.AllowUserToResizeRows = False
         Me.GrdList.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.GrdList.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.GrdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -78,6 +79,8 @@ Partial Class FrmProducts
         Me.GrdList.Location = New System.Drawing.Point(1, 1)
         Me.GrdList.Name = "GrdList"
         Me.GrdList.ReadOnly = True
+        Me.GrdList.RowTemplate.Height = 30
+        Me.GrdList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.GrdList.Size = New System.Drawing.Size(803, 354)
         Me.GrdList.TabIndex = 0
         '
@@ -110,19 +113,19 @@ Partial Class FrmProducts
         Me.TxtSearch.Size = New System.Drawing.Size(284, 27)
         Me.TxtSearch.TabIndex = 0
         '
-        'Button1
+        'BtnSearch
         '
-        Me.Button1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(289, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(89, 30)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Search"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnSearch.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnSearch.Location = New System.Drawing.Point(289, 0)
+        Me.BtnSearch.Name = "BtnSearch"
+        Me.BtnSearch.Size = New System.Drawing.Size(89, 30)
+        Me.BtnSearch.TabIndex = 1
+        Me.BtnSearch.Text = "Search"
+        Me.BtnSearch.UseVisualStyleBackColor = True
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.BtnSearch)
         Me.Panel1.Controls.Add(Me.TxtSearch)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel1.Location = New System.Drawing.Point(427, 0)
@@ -220,7 +223,7 @@ Partial Class FrmProducts
     Friend WithEvents BtnUpdate As Button
     Friend WithEvents BtnCreate As Button
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnSearch As Button
     Friend WithEvents TxtSearch As TextBox
     Friend WithEvents LblRecords As Label
 End Class

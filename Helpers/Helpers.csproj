@@ -47,6 +47,7 @@
     <Compile Include="Helpers\Config.cs" />
     <Compile Include="Helpers\DB.cs" />
     <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\Filler.cs" />
     <Compile Include="Helpers\Toast.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

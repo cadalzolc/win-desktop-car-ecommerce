@@ -47,7 +47,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>onebit_01.ico</ApplicationIcon>
+    <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -94,6 +94,12 @@
     <Compile Include="Forms\FrmProducts.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FrmProductsDialog.Designer.vb">
+      <DependentUpon>FrmProductsDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProductsDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\Session.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -123,6 +129,9 @@
     <EmbeddedResource Include="Forms\FrmProducts.resx">
       <DependentUpon>FrmProducts.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProductsDialog.resx">
+      <DependentUpon>FrmProductsDialog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -149,7 +158,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="onebit_01.ico" />
+    <Content Include="app.ico" />
     <None Include="Resources\cross.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
