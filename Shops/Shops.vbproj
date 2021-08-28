@@ -85,6 +85,18 @@
       <DependentUpon>FrmShop.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmAccount.Designer.vb">
+      <DependentUpon>FrmAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegister.Designer.vb">
+      <DependentUpon>FrmRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\Session.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -110,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmShop.resx">
       <DependentUpon>FrmShop.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegister.resx">
+      <DependentUpon>FrmRegister.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

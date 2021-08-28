@@ -21,6 +21,11 @@
         Close()
     End Sub
 
+    Private Sub BtnRegister_Click(sender As Object, e As EventArgs) Handles BtnRegister.Click
+        Dim FrmReg As New FrmRegister()
+        FrmReg.ShowDialog()
+    End Sub
+
 #End Region
 
 #Region " Function - Login "
@@ -53,7 +58,6 @@
             Return False
         End Try
     End Function
-
 
 #End Region
 
