@@ -38,6 +38,8 @@ Partial Class FrmRegister
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.TxtProvince = New System.Windows.Forms.TextBox()
+        Me.TxtCity = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.TxtZip_Code = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -62,8 +64,6 @@ Partial Class FrmRegister
         Me.TxtUsername = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.TxtCity = New System.Windows.Forms.TextBox()
-        Me.TxtProvince = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -107,7 +107,7 @@ Partial Class FrmRegister
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(26, 183)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(75, 13)
+        Me.Label7.Size = New System.Drawing.Size(93, 17)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Contact No."
         '
@@ -116,7 +116,7 @@ Partial Class FrmRegister
         Me.TxtContact_No.Location = New System.Drawing.Point(114, 183)
         Me.TxtContact_No.MaxLength = 35
         Me.TxtContact_No.Name = "TxtContact_No"
-        Me.TxtContact_No.Size = New System.Drawing.Size(200, 22)
+        Me.TxtContact_No.Size = New System.Drawing.Size(200, 26)
         Me.TxtContact_No.TabIndex = 5
         '
         'Label6
@@ -125,7 +125,7 @@ Partial Class FrmRegister
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(26, 155)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 13)
+        Me.Label6.Size = New System.Drawing.Size(47, 17)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Email"
         '
@@ -134,7 +134,7 @@ Partial Class FrmRegister
         Me.TxtEmail.Location = New System.Drawing.Point(114, 155)
         Me.TxtEmail.MaxLength = 35
         Me.TxtEmail.Name = "TxtEmail"
-        Me.TxtEmail.Size = New System.Drawing.Size(200, 22)
+        Me.TxtEmail.Size = New System.Drawing.Size(200, 26)
         Me.TxtEmail.TabIndex = 4
         '
         'Label5
@@ -143,7 +143,7 @@ Partial Class FrmRegister
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(26, 127)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 13)
+        Me.Label5.Size = New System.Drawing.Size(62, 17)
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Gender"
         '
@@ -153,7 +153,7 @@ Partial Class FrmRegister
         Me.CboGender.FormattingEnabled = True
         Me.CboGender.Location = New System.Drawing.Point(114, 127)
         Me.CboGender.Name = "CboGender"
-        Me.CboGender.Size = New System.Drawing.Size(108, 22)
+        Me.CboGender.Size = New System.Drawing.Size(108, 26)
         Me.CboGender.TabIndex = 3
         '
         'TxtLast_Name
@@ -161,7 +161,7 @@ Partial Class FrmRegister
         Me.TxtLast_Name.Location = New System.Drawing.Point(114, 99)
         Me.TxtLast_Name.MaxLength = 35
         Me.TxtLast_Name.Name = "TxtLast_Name"
-        Me.TxtLast_Name.Size = New System.Drawing.Size(200, 22)
+        Me.TxtLast_Name.Size = New System.Drawing.Size(200, 26)
         Me.TxtLast_Name.TabIndex = 2
         '
         'TxtMiddle_Name
@@ -169,7 +169,7 @@ Partial Class FrmRegister
         Me.TxtMiddle_Name.Location = New System.Drawing.Point(114, 71)
         Me.TxtMiddle_Name.MaxLength = 35
         Me.TxtMiddle_Name.Name = "TxtMiddle_Name"
-        Me.TxtMiddle_Name.Size = New System.Drawing.Size(200, 22)
+        Me.TxtMiddle_Name.Size = New System.Drawing.Size(200, 26)
         Me.TxtMiddle_Name.TabIndex = 1
         '
         'TxtFirst_Name
@@ -177,7 +177,7 @@ Partial Class FrmRegister
         Me.TxtFirst_Name.Location = New System.Drawing.Point(114, 42)
         Me.TxtFirst_Name.MaxLength = 35
         Me.TxtFirst_Name.Name = "TxtFirst_Name"
-        Me.TxtFirst_Name.Size = New System.Drawing.Size(200, 22)
+        Me.TxtFirst_Name.Size = New System.Drawing.Size(200, 26)
         Me.TxtFirst_Name.TabIndex = 0
         '
         'Label4
@@ -186,7 +186,7 @@ Partial Class FrmRegister
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(26, 71)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 13)
+        Me.Label4.Size = New System.Drawing.Size(101, 17)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Middle Name"
         '
@@ -196,7 +196,7 @@ Partial Class FrmRegister
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(26, 99)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 13)
+        Me.Label2.Size = New System.Drawing.Size(85, 17)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Last Name"
         '
@@ -206,7 +206,7 @@ Partial Class FrmRegister
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(26, 42)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 13)
+        Me.Label1.Size = New System.Drawing.Size(86, 17)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "First Name"
         '
@@ -229,13 +229,29 @@ Partial Class FrmRegister
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Shipping Address"
         '
+        'TxtProvince
+        '
+        Me.TxtProvince.Location = New System.Drawing.Point(114, 99)
+        Me.TxtProvince.MaxLength = 35
+        Me.TxtProvince.Name = "TxtProvince"
+        Me.TxtProvince.Size = New System.Drawing.Size(200, 26)
+        Me.TxtProvince.TabIndex = 2
+        '
+        'TxtCity
+        '
+        Me.TxtCity.Location = New System.Drawing.Point(114, 71)
+        Me.TxtCity.MaxLength = 35
+        Me.TxtCity.Name = "TxtCity"
+        Me.TxtCity.Size = New System.Drawing.Size(200, 26)
+        Me.TxtCity.TabIndex = 1
+        '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(26, 155)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(58, 13)
+        Me.Label3.Size = New System.Drawing.Size(73, 17)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Zip Code"
         '
@@ -244,7 +260,7 @@ Partial Class FrmRegister
         Me.TxtZip_Code.Location = New System.Drawing.Point(114, 155)
         Me.TxtZip_Code.MaxLength = 10
         Me.TxtZip_Code.Name = "TxtZip_Code"
-        Me.TxtZip_Code.Size = New System.Drawing.Size(108, 22)
+        Me.TxtZip_Code.Size = New System.Drawing.Size(108, 26)
         Me.TxtZip_Code.TabIndex = 4
         '
         'Label8
@@ -253,7 +269,7 @@ Partial Class FrmRegister
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(26, 127)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(50, 13)
+        Me.Label8.Size = New System.Drawing.Size(64, 17)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Country"
         '
@@ -262,7 +278,7 @@ Partial Class FrmRegister
         Me.TxtCountry.Location = New System.Drawing.Point(114, 127)
         Me.TxtCountry.MaxLength = 35
         Me.TxtCountry.Name = "TxtCountry"
-        Me.TxtCountry.Size = New System.Drawing.Size(200, 22)
+        Me.TxtCountry.Size = New System.Drawing.Size(200, 26)
         Me.TxtCountry.TabIndex = 3
         '
         'Label9
@@ -271,7 +287,7 @@ Partial Class FrmRegister
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(26, 99)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(57, 13)
+        Me.Label9.Size = New System.Drawing.Size(71, 17)
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Province"
         '
@@ -280,7 +296,7 @@ Partial Class FrmRegister
         Me.TxtAddress.Location = New System.Drawing.Point(114, 42)
         Me.TxtAddress.MaxLength = 35
         Me.TxtAddress.Name = "TxtAddress"
-        Me.TxtAddress.Size = New System.Drawing.Size(200, 22)
+        Me.TxtAddress.Size = New System.Drawing.Size(200, 26)
         Me.TxtAddress.TabIndex = 0
         '
         'Label10
@@ -289,7 +305,7 @@ Partial Class FrmRegister
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(26, 71)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(28, 13)
+        Me.Label10.Size = New System.Drawing.Size(35, 17)
         Me.Label10.TabIndex = 4
         Me.Label10.Text = "City"
         '
@@ -299,7 +315,7 @@ Partial Class FrmRegister
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.Location = New System.Drawing.Point(26, 42)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(52, 13)
+        Me.Label12.Size = New System.Drawing.Size(67, 17)
         Me.Label12.TabIndex = 2
         Me.Label12.Text = "Address"
         '
@@ -327,7 +343,7 @@ Partial Class FrmRegister
         Me.TxtAlias.Location = New System.Drawing.Point(114, 42)
         Me.TxtAlias.MaxLength = 35
         Me.TxtAlias.Name = "TxtAlias"
-        Me.TxtAlias.Size = New System.Drawing.Size(200, 22)
+        Me.TxtAlias.Size = New System.Drawing.Size(200, 26)
         Me.TxtAlias.TabIndex = 0
         '
         'Label11
@@ -336,7 +352,7 @@ Partial Class FrmRegister
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.Location = New System.Drawing.Point(26, 42)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(34, 13)
+        Me.Label11.Size = New System.Drawing.Size(43, 17)
         Me.Label11.TabIndex = 16
         Me.Label11.Text = "Alias"
         '
@@ -344,7 +360,7 @@ Partial Class FrmRegister
         '
         Me.dtpExpiry.Location = New System.Drawing.Point(114, 156)
         Me.dtpExpiry.Name = "dtpExpiry"
-        Me.dtpExpiry.Size = New System.Drawing.Size(200, 22)
+        Me.dtpExpiry.Size = New System.Drawing.Size(200, 26)
         Me.dtpExpiry.TabIndex = 4
         '
         'CboCard_Type
@@ -353,7 +369,7 @@ Partial Class FrmRegister
         Me.CboCard_Type.FormattingEnabled = True
         Me.CboCard_Type.Location = New System.Drawing.Point(114, 71)
         Me.CboCard_Type.Name = "CboCard_Type"
-        Me.CboCard_Type.Size = New System.Drawing.Size(200, 22)
+        Me.CboCard_Type.Size = New System.Drawing.Size(200, 26)
         Me.CboCard_Type.TabIndex = 1
         '
         'Label14
@@ -362,7 +378,7 @@ Partial Class FrmRegister
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.Location = New System.Drawing.Point(26, 156)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(41, 13)
+        Me.Label14.Size = New System.Drawing.Size(52, 17)
         Me.Label14.TabIndex = 8
         Me.Label14.Text = "Expiry"
         '
@@ -371,7 +387,7 @@ Partial Class FrmRegister
         Me.TxtCard_Pin.Location = New System.Drawing.Point(114, 128)
         Me.TxtCard_Pin.MaxLength = 6
         Me.TxtCard_Pin.Name = "TxtCard_Pin"
-        Me.TxtCard_Pin.Size = New System.Drawing.Size(108, 22)
+        Me.TxtCard_Pin.Size = New System.Drawing.Size(108, 26)
         Me.TxtCard_Pin.TabIndex = 3
         Me.TxtCard_Pin.UseSystemPasswordChar = True
         '
@@ -380,7 +396,7 @@ Partial Class FrmRegister
         Me.TxtCard_No.Location = New System.Drawing.Point(114, 100)
         Me.TxtCard_No.MaxLength = 20
         Me.TxtCard_No.Name = "TxtCard_No"
-        Me.TxtCard_No.Size = New System.Drawing.Size(200, 22)
+        Me.TxtCard_No.Size = New System.Drawing.Size(200, 26)
         Me.TxtCard_No.TabIndex = 2
         '
         'Label15
@@ -389,7 +405,7 @@ Partial Class FrmRegister
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.Location = New System.Drawing.Point(26, 100)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(53, 13)
+        Me.Label15.Size = New System.Drawing.Size(67, 17)
         Me.Label15.TabIndex = 4
         Me.Label15.Text = "Card No"
         '
@@ -399,7 +415,7 @@ Partial Class FrmRegister
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.Location = New System.Drawing.Point(26, 128)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(58, 13)
+        Me.Label16.Size = New System.Drawing.Size(72, 17)
         Me.Label16.TabIndex = 3
         Me.Label16.Text = "Card PIN"
         '
@@ -409,7 +425,7 @@ Partial Class FrmRegister
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(26, 71)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(65, 13)
+        Me.Label17.Size = New System.Drawing.Size(83, 17)
         Me.Label17.TabIndex = 2
         Me.Label17.Text = "Card Type"
         '
@@ -431,7 +447,7 @@ Partial Class FrmRegister
         Me.TxtPassword.Location = New System.Drawing.Point(114, 71)
         Me.TxtPassword.MaxLength = 35
         Me.TxtPassword.Name = "TxtPassword"
-        Me.TxtPassword.Size = New System.Drawing.Size(200, 22)
+        Me.TxtPassword.Size = New System.Drawing.Size(200, 26)
         Me.TxtPassword.TabIndex = 1
         Me.TxtPassword.UseSystemPasswordChar = True
         '
@@ -440,7 +456,7 @@ Partial Class FrmRegister
         Me.TxtUsername.Location = New System.Drawing.Point(114, 42)
         Me.TxtUsername.MaxLength = 35
         Me.TxtUsername.Name = "TxtUsername"
-        Me.TxtUsername.Size = New System.Drawing.Size(200, 22)
+        Me.TxtUsername.Size = New System.Drawing.Size(200, 26)
         Me.TxtUsername.TabIndex = 0
         '
         'Label21
@@ -449,7 +465,7 @@ Partial Class FrmRegister
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label21.Location = New System.Drawing.Point(26, 71)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(61, 13)
+        Me.Label21.Size = New System.Drawing.Size(77, 17)
         Me.Label21.TabIndex = 4
         Me.Label21.Text = "Password"
         '
@@ -459,30 +475,14 @@ Partial Class FrmRegister
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label23.Location = New System.Drawing.Point(26, 42)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(63, 13)
+        Me.Label23.Size = New System.Drawing.Size(81, 17)
         Me.Label23.TabIndex = 2
         Me.Label23.Text = "Username"
-        '
-        'TxtCity
-        '
-        Me.TxtCity.Location = New System.Drawing.Point(114, 71)
-        Me.TxtCity.MaxLength = 35
-        Me.TxtCity.Name = "TxtCity"
-        Me.TxtCity.Size = New System.Drawing.Size(200, 22)
-        Me.TxtCity.TabIndex = 1
-        '
-        'TxtProvince
-        '
-        Me.TxtProvince.Location = New System.Drawing.Point(114, 99)
-        Me.TxtProvince.MaxLength = 35
-        Me.TxtProvince.Name = "TxtProvince"
-        Me.TxtProvince.Size = New System.Drawing.Size(200, 22)
-        Me.TxtProvince.TabIndex = 2
         '
         'FrmRegister
         '
         Me.AcceptButton = Me.BtnSubmit
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 18.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(690, 433)
         Me.Controls.Add(Me.GroupBox4)

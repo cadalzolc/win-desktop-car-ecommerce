@@ -26,7 +26,7 @@
             Card.Product.Add("Color_Name", Row("Color_Name"))
             Card.Product.Add("Image", Row("Image"))
 
-            AddHandler Card.BuyClick, AddressOf Card_Click
+            AddHandler Card.OnBuyClick, AddressOf Card_Click
 
             PnlBody.Controls.Add(Card)
             PnlBody.Refresh()
@@ -89,10 +89,12 @@
 
 #Region " Events - Card "
 
-    Private Sub Card_Click(sender As Object, e As EventArgs) Handles BtnLoans.Click
+    Private Sub Card_Click(sender As Object, e As EventArgs)
+
         Dim Card = CType(sender, Cards)
-        Dim Frm As New FrmOrder()
-        Frm.Product = Card.Product
+        Dim Frm As New FrmOrder With {
+            .Product = Card.Product
+        }
         Frm.ShowDialog()
     End Sub
 

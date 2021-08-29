@@ -12,14 +12,24 @@
         End Set
     End Property
 
-    Public Event BuyClick As EventHandler
+    Public Custom Event OnBuyClick As EventHandler
+        AddHandler(value As EventHandler)
+            Events.AddHandler("BuyClick", value)
+        End AddHandler
+        RemoveHandler(value As EventHandler)
+            Events.RemoveHandler("BuyClick", value)
+        End RemoveHandler
+        RaiseEvent(sender As Object, e As EventArgs)
+            CType(Events("BuyClick"), EventHandler).Invoke(sender, e)
+        End RaiseEvent
+    End Event
 
 #End Region
 
 #Region " Events - Button  "
 
     Private Sub BtnBuyNow_Click(sender As Object, e As EventArgs) Handles BtnBuyNow.Click
-        RaiseEvent BuyClick(Me, e)
+        RaiseEvent OnBuyClick(Me, e)
     End Sub
 
 #End Region

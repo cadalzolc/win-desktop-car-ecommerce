@@ -83,6 +83,7 @@
                     CmdCustomer.Parameters.AddWithValue("@Email", TxtEmail.Text)
                     CmdCustomer.Parameters.AddWithValue("@Contact_No", TxtContact_No.Text)
                     CmdCustomer.ExecuteNonQuery()
+
                     CmdCustomer.CommandText = "SELECT @@Identity"
 
                     ID = CmdCustomer.ExecuteScalar()
