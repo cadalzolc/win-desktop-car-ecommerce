@@ -25,45 +25,45 @@ Partial Class FrmRegister
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmRegister))
         Me.BtnSubmit = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.TxtContact_No = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TxtEmail = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.CboGender = New System.Windows.Forms.ComboBox()
+        Me.TxtLast_Name = New System.Windows.Forms.TextBox()
+        Me.TxtMiddle_Name = New System.Windows.Forms.TextBox()
+        Me.TxtFirst_Name = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtZip_Code = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TxtCountry = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TxtAddress = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.TxtAlias = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.dtpExpiry = New System.Windows.Forms.DateTimePicker()
+        Me.CboCard_Type = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
-        Me.TextBox12 = New System.Windows.Forms.TextBox()
+        Me.TxtCard_Pin = New System.Windows.Forms.TextBox()
+        Me.TxtCard_No = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.TextBox17 = New System.Windows.Forms.TextBox()
-        Me.TextBox18 = New System.Windows.Forms.TextBox()
+        Me.TxtPassword = New System.Windows.Forms.TextBox()
+        Me.TxtUsername = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.ComboBox5 = New System.Windows.Forms.ComboBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.TxtCity = New System.Windows.Forms.TextBox()
+        Me.TxtProvince = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -76,21 +76,21 @@ Partial Class FrmRegister
         Me.BtnSubmit.Location = New System.Drawing.Point(590, 394)
         Me.BtnSubmit.Name = "BtnSubmit"
         Me.BtnSubmit.Size = New System.Drawing.Size(87, 30)
-        Me.BtnSubmit.TabIndex = 0
+        Me.BtnSubmit.TabIndex = 4
         Me.BtnSubmit.Text = "Submit"
         Me.BtnSubmit.UseVisualStyleBackColor = True
         '
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label7)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.TxtContact_No)
         Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.TxtEmail)
         Me.GroupBox1.Controls.Add(Me.Label5)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.CboGender)
+        Me.GroupBox1.Controls.Add(Me.TxtLast_Name)
+        Me.GroupBox1.Controls.Add(Me.TxtMiddle_Name)
+        Me.GroupBox1.Controls.Add(Me.TxtFirst_Name)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -100,92 +100,6 @@ Partial Class FrmRegister
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Customer Info"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(26, 42)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(67, 13)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "First Name"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(114, 127)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(108, 22)
-        Me.ComboBox1.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(26, 99)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(67, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Last Name"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(26, 71)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 13)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Middle Name"
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(114, 42)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox2.TabIndex = 0
-        '
-        'TextBox3
-        '
-        Me.TextBox3.Location = New System.Drawing.Point(114, 71)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox3.TabIndex = 1
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(114, 99)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox4.TabIndex = 2
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(26, 127)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 13)
-        Me.Label5.TabIndex = 8
-        Me.Label5.Text = "Gender"
-        '
-        'TextBox5
-        '
-        Me.TextBox5.Location = New System.Drawing.Point(114, 155)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox5.TabIndex = 5
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(26, 155)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 13)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Email"
         '
         'Label7
         '
@@ -197,23 +111,115 @@ Partial Class FrmRegister
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Contact No."
         '
-        'TextBox6
+        'TxtContact_No
         '
-        Me.TextBox6.Location = New System.Drawing.Point(114, 183)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox6.TabIndex = 6
+        Me.TxtContact_No.Location = New System.Drawing.Point(114, 183)
+        Me.TxtContact_No.MaxLength = 35
+        Me.TxtContact_No.Name = "TxtContact_No"
+        Me.TxtContact_No.Size = New System.Drawing.Size(200, 22)
+        Me.TxtContact_No.TabIndex = 5
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(26, 155)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(37, 13)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Email"
+        '
+        'TxtEmail
+        '
+        Me.TxtEmail.Location = New System.Drawing.Point(114, 155)
+        Me.TxtEmail.MaxLength = 35
+        Me.TxtEmail.Name = "TxtEmail"
+        Me.TxtEmail.Size = New System.Drawing.Size(200, 22)
+        Me.TxtEmail.TabIndex = 4
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(26, 127)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(48, 13)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "Gender"
+        '
+        'CboGender
+        '
+        Me.CboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboGender.FormattingEnabled = True
+        Me.CboGender.Location = New System.Drawing.Point(114, 127)
+        Me.CboGender.Name = "CboGender"
+        Me.CboGender.Size = New System.Drawing.Size(108, 22)
+        Me.CboGender.TabIndex = 3
+        '
+        'TxtLast_Name
+        '
+        Me.TxtLast_Name.Location = New System.Drawing.Point(114, 99)
+        Me.TxtLast_Name.MaxLength = 35
+        Me.TxtLast_Name.Name = "TxtLast_Name"
+        Me.TxtLast_Name.Size = New System.Drawing.Size(200, 22)
+        Me.TxtLast_Name.TabIndex = 2
+        '
+        'TxtMiddle_Name
+        '
+        Me.TxtMiddle_Name.Location = New System.Drawing.Point(114, 71)
+        Me.TxtMiddle_Name.MaxLength = 35
+        Me.TxtMiddle_Name.Name = "TxtMiddle_Name"
+        Me.TxtMiddle_Name.Size = New System.Drawing.Size(200, 22)
+        Me.TxtMiddle_Name.TabIndex = 1
+        '
+        'TxtFirst_Name
+        '
+        Me.TxtFirst_Name.Location = New System.Drawing.Point(114, 42)
+        Me.TxtFirst_Name.MaxLength = 35
+        Me.TxtFirst_Name.Name = "TxtFirst_Name"
+        Me.TxtFirst_Name.Size = New System.Drawing.Size(200, 22)
+        Me.TxtFirst_Name.TabIndex = 0
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(26, 71)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(80, 13)
+        Me.Label4.TabIndex = 4
+        Me.Label4.Text = "Middle Name"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(26, 99)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(67, 13)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "Last Name"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(26, 42)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(67, 13)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "First Name"
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.ComboBox3)
+        Me.GroupBox2.Controls.Add(Me.TxtProvince)
+        Me.GroupBox2.Controls.Add(Me.TxtCity)
         Me.GroupBox2.Controls.Add(Me.Label3)
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.TxtZip_Code)
         Me.GroupBox2.Controls.Add(Me.Label8)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
+        Me.GroupBox2.Controls.Add(Me.TxtCountry)
         Me.GroupBox2.Controls.Add(Me.Label9)
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
+        Me.GroupBox2.Controls.Add(Me.TxtAddress)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Location = New System.Drawing.Point(10, 231)
@@ -233,12 +239,13 @@ Partial Class FrmRegister
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Zip Code"
         '
-        'TextBox1
+        'TxtZip_Code
         '
-        Me.TextBox1.Location = New System.Drawing.Point(114, 155)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox1.TabIndex = 4
+        Me.TxtZip_Code.Location = New System.Drawing.Point(114, 155)
+        Me.TxtZip_Code.MaxLength = 10
+        Me.TxtZip_Code.Name = "TxtZip_Code"
+        Me.TxtZip_Code.Size = New System.Drawing.Size(108, 22)
+        Me.TxtZip_Code.TabIndex = 4
         '
         'Label8
         '
@@ -250,13 +257,13 @@ Partial Class FrmRegister
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Country"
         '
-        'TextBox7
+        'TxtCountry
         '
-        Me.TextBox7.Location = New System.Drawing.Point(114, 127)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.ReadOnly = True
-        Me.TextBox7.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox7.TabIndex = 3
+        Me.TxtCountry.Location = New System.Drawing.Point(114, 127)
+        Me.TxtCountry.MaxLength = 35
+        Me.TxtCountry.Name = "TxtCountry"
+        Me.TxtCountry.Size = New System.Drawing.Size(200, 22)
+        Me.TxtCountry.TabIndex = 3
         '
         'Label9
         '
@@ -268,20 +275,13 @@ Partial Class FrmRegister
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Province"
         '
-        'ComboBox2
+        'TxtAddress
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(114, 99)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(200, 22)
-        Me.ComboBox2.TabIndex = 2
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(114, 42)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox10.TabIndex = 0
+        Me.TxtAddress.Location = New System.Drawing.Point(114, 42)
+        Me.TxtAddress.MaxLength = 35
+        Me.TxtAddress.Name = "TxtAddress"
+        Me.TxtAddress.Size = New System.Drawing.Size(200, 22)
+        Me.TxtAddress.TabIndex = 0
         '
         'Label10
         '
@@ -303,23 +303,15 @@ Partial Class FrmRegister
         Me.Label12.TabIndex = 2
         Me.Label12.Text = "Address"
         '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(114, 71)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(200, 22)
-        Me.ComboBox3.TabIndex = 1
-        '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.TextBox8)
+        Me.GroupBox3.Controls.Add(Me.TxtAlias)
         Me.GroupBox3.Controls.Add(Me.Label11)
-        Me.GroupBox3.Controls.Add(Me.DateTimePicker1)
-        Me.GroupBox3.Controls.Add(Me.ComboBox5)
+        Me.GroupBox3.Controls.Add(Me.dtpExpiry)
+        Me.GroupBox3.Controls.Add(Me.CboCard_Type)
         Me.GroupBox3.Controls.Add(Me.Label14)
-        Me.GroupBox3.Controls.Add(Me.TextBox11)
-        Me.GroupBox3.Controls.Add(Me.TextBox12)
+        Me.GroupBox3.Controls.Add(Me.TxtCard_Pin)
+        Me.GroupBox3.Controls.Add(Me.TxtCard_No)
         Me.GroupBox3.Controls.Add(Me.Label15)
         Me.GroupBox3.Controls.Add(Me.Label16)
         Me.GroupBox3.Controls.Add(Me.Label17)
@@ -329,6 +321,40 @@ Partial Class FrmRegister
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Payment Method"
+        '
+        'TxtAlias
+        '
+        Me.TxtAlias.Location = New System.Drawing.Point(114, 42)
+        Me.TxtAlias.MaxLength = 35
+        Me.TxtAlias.Name = "TxtAlias"
+        Me.TxtAlias.Size = New System.Drawing.Size(200, 22)
+        Me.TxtAlias.TabIndex = 0
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(26, 42)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(34, 13)
+        Me.Label11.TabIndex = 16
+        Me.Label11.Text = "Alias"
+        '
+        'dtpExpiry
+        '
+        Me.dtpExpiry.Location = New System.Drawing.Point(114, 156)
+        Me.dtpExpiry.Name = "dtpExpiry"
+        Me.dtpExpiry.Size = New System.Drawing.Size(200, 22)
+        Me.dtpExpiry.TabIndex = 4
+        '
+        'CboCard_Type
+        '
+        Me.CboCard_Type.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboCard_Type.FormattingEnabled = True
+        Me.CboCard_Type.Location = New System.Drawing.Point(114, 71)
+        Me.CboCard_Type.Name = "CboCard_Type"
+        Me.CboCard_Type.Size = New System.Drawing.Size(200, 22)
+        Me.CboCard_Type.TabIndex = 1
         '
         'Label14
         '
@@ -340,20 +366,22 @@ Partial Class FrmRegister
         Me.Label14.TabIndex = 8
         Me.Label14.Text = "Expiry"
         '
-        'TextBox11
+        'TxtCard_Pin
         '
-        Me.TextBox11.Location = New System.Drawing.Point(114, 128)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(108, 22)
-        Me.TextBox11.TabIndex = 2
-        Me.TextBox11.UseSystemPasswordChar = True
+        Me.TxtCard_Pin.Location = New System.Drawing.Point(114, 128)
+        Me.TxtCard_Pin.MaxLength = 6
+        Me.TxtCard_Pin.Name = "TxtCard_Pin"
+        Me.TxtCard_Pin.Size = New System.Drawing.Size(108, 22)
+        Me.TxtCard_Pin.TabIndex = 3
+        Me.TxtCard_Pin.UseSystemPasswordChar = True
         '
-        'TextBox12
+        'TxtCard_No
         '
-        Me.TextBox12.Location = New System.Drawing.Point(114, 100)
-        Me.TextBox12.Name = "TextBox12"
-        Me.TextBox12.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox12.TabIndex = 1
+        Me.TxtCard_No.Location = New System.Drawing.Point(114, 100)
+        Me.TxtCard_No.MaxLength = 20
+        Me.TxtCard_No.Name = "TxtCard_No"
+        Me.TxtCard_No.Size = New System.Drawing.Size(200, 22)
+        Me.TxtCard_No.TabIndex = 2
         '
         'Label15
         '
@@ -381,37 +409,39 @@ Partial Class FrmRegister
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label17.Location = New System.Drawing.Point(26, 71)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(36, 13)
+        Me.Label17.Size = New System.Drawing.Size(65, 13)
         Me.Label17.TabIndex = 2
-        Me.Label17.Text = "Bank"
+        Me.Label17.Text = "Card Type"
         '
         'GroupBox4
         '
-        Me.GroupBox4.Controls.Add(Me.TextBox17)
-        Me.GroupBox4.Controls.Add(Me.TextBox18)
+        Me.GroupBox4.Controls.Add(Me.TxtPassword)
+        Me.GroupBox4.Controls.Add(Me.TxtUsername)
         Me.GroupBox4.Controls.Add(Me.Label21)
         Me.GroupBox4.Controls.Add(Me.Label23)
         Me.GroupBox4.Location = New System.Drawing.Point(349, 231)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(328, 118)
-        Me.GroupBox4.TabIndex = 4
+        Me.GroupBox4.TabIndex = 3
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Credentials"
         '
-        'TextBox17
+        'TxtPassword
         '
-        Me.TextBox17.Location = New System.Drawing.Point(114, 71)
-        Me.TextBox17.Name = "TextBox17"
-        Me.TextBox17.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox17.TabIndex = 1
-        Me.TextBox17.UseSystemPasswordChar = True
+        Me.TxtPassword.Location = New System.Drawing.Point(114, 71)
+        Me.TxtPassword.MaxLength = 35
+        Me.TxtPassword.Name = "TxtPassword"
+        Me.TxtPassword.Size = New System.Drawing.Size(200, 22)
+        Me.TxtPassword.TabIndex = 1
+        Me.TxtPassword.UseSystemPasswordChar = True
         '
-        'TextBox18
+        'TxtUsername
         '
-        Me.TextBox18.Location = New System.Drawing.Point(114, 42)
-        Me.TextBox18.Name = "TextBox18"
-        Me.TextBox18.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox18.TabIndex = 0
+        Me.TxtUsername.Location = New System.Drawing.Point(114, 42)
+        Me.TxtUsername.MaxLength = 35
+        Me.TxtUsername.Name = "TxtUsername"
+        Me.TxtUsername.Size = New System.Drawing.Size(200, 22)
+        Me.TxtUsername.TabIndex = 0
         '
         'Label21
         '
@@ -433,37 +463,21 @@ Partial Class FrmRegister
         Me.Label23.TabIndex = 2
         Me.Label23.Text = "Username"
         '
-        'ComboBox5
+        'TxtCity
         '
-        Me.ComboBox5.FormattingEnabled = True
-        Me.ComboBox5.Location = New System.Drawing.Point(114, 67)
-        Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(200, 22)
-        Me.ComboBox5.TabIndex = 13
+        Me.TxtCity.Location = New System.Drawing.Point(114, 71)
+        Me.TxtCity.MaxLength = 35
+        Me.TxtCity.Name = "TxtCity"
+        Me.TxtCity.Size = New System.Drawing.Size(200, 22)
+        Me.TxtCity.TabIndex = 1
         '
-        'DateTimePicker1
+        'TxtProvince
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(114, 156)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 22)
-        Me.DateTimePicker1.TabIndex = 14
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(114, 42)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(200, 22)
-        Me.TextBox8.TabIndex = 15
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(26, 42)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(34, 13)
-        Me.Label11.TabIndex = 16
-        Me.Label11.Text = "Alias"
+        Me.TxtProvince.Location = New System.Drawing.Point(114, 99)
+        Me.TxtProvince.MaxLength = 35
+        Me.TxtProvince.Name = "TxtProvince"
+        Me.TxtProvince.Size = New System.Drawing.Size(200, 22)
+        Me.TxtProvince.TabIndex = 2
         '
         'FrmRegister
         '
@@ -501,40 +515,40 @@ Partial Class FrmRegister
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CboGender As ComboBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents TxtContact_No As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents TxtEmail As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtLast_Name As TextBox
+    Friend WithEvents TxtMiddle_Name As TextBox
+    Friend WithEvents TxtFirst_Name As TextBox
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtZip_Code As TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents TxtCountry As TextBox
     Friend WithEvents Label9 As Label
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents TxtAddress As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents Label14 As Label
-    Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents TextBox12 As TextBox
+    Friend WithEvents TxtCard_Pin As TextBox
+    Friend WithEvents TxtCard_No As TextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents TextBox17 As TextBox
-    Friend WithEvents TextBox18 As TextBox
+    Friend WithEvents TxtPassword As TextBox
+    Friend WithEvents TxtUsername As TextBox
     Friend WithEvents Label21 As Label
     Friend WithEvents Label23 As Label
-    Friend WithEvents TextBox8 As TextBox
+    Friend WithEvents TxtAlias As TextBox
     Friend WithEvents Label11 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents ComboBox5 As ComboBox
+    Friend WithEvents dtpExpiry As DateTimePicker
+    Friend WithEvents CboCard_Type As ComboBox
+    Friend WithEvents TxtProvince As TextBox
+    Friend WithEvents TxtCity As TextBox
 End Class

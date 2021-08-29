@@ -34,64 +34,72 @@ Partial Class FrmLogin
         '
         'BtnLogin
         '
-        Me.BtnLogin.Location = New System.Drawing.Point(215, 149)
+        Me.BtnLogin.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnLogin.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnLogin.Location = New System.Drawing.Point(234, 149)
         Me.BtnLogin.Name = "BtnLogin"
-        Me.BtnLogin.Size = New System.Drawing.Size(87, 32)
+        Me.BtnLogin.Size = New System.Drawing.Size(102, 39)
         Me.BtnLogin.TabIndex = 2
         Me.BtnLogin.Text = "Login"
         Me.BtnLogin.UseVisualStyleBackColor = True
         '
         'TxtUsername
         '
-        Me.TxtUsername.Location = New System.Drawing.Point(109, 87)
+        Me.TxtUsername.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtUsername.Location = New System.Drawing.Point(109, 81)
         Me.TxtUsername.Name = "TxtUsername"
-        Me.TxtUsername.Size = New System.Drawing.Size(193, 22)
+        Me.TxtUsername.Size = New System.Drawing.Size(227, 26)
         Me.TxtUsername.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label1.Location = New System.Drawing.Point(26, 87)
+        Me.Label1.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Firebrick
+        Me.Label1.Location = New System.Drawing.Point(16, 81)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(61, 14)
+        Me.Label1.Size = New System.Drawing.Size(75, 18)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Username"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label2.Location = New System.Drawing.Point(26, 118)
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.Firebrick
+        Me.Label2.Location = New System.Drawing.Point(16, 113)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 14)
+        Me.Label2.Size = New System.Drawing.Size(69, 18)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Password"
         '
         'TxtPassword
         '
-        Me.TxtPassword.Location = New System.Drawing.Point(109, 118)
+        Me.TxtPassword.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtPassword.Location = New System.Drawing.Point(109, 113)
         Me.TxtPassword.Name = "TxtPassword"
-        Me.TxtPassword.Size = New System.Drawing.Size(193, 22)
+        Me.TxtPassword.Size = New System.Drawing.Size(227, 26)
         Me.TxtPassword.TabIndex = 1
         Me.TxtPassword.UseSystemPasswordChar = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(26, 39)
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Firebrick
+        Me.Label3.Location = New System.Drawing.Point(15, 34)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(224, 14)
+        Me.Label3.Size = New System.Drawing.Size(306, 19)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "WELCOME TO ONLINE CAR GALLERY"
         '
         'BtnRegister
         '
+        Me.BtnRegister.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnRegister.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnRegister.Location = New System.Drawing.Point(109, 149)
         Me.BtnRegister.Name = "BtnRegister"
-        Me.BtnRegister.Size = New System.Drawing.Size(87, 32)
+        Me.BtnRegister.Size = New System.Drawing.Size(102, 39)
         Me.BtnRegister.TabIndex = 3
         Me.BtnRegister.Text = "Register"
         Me.BtnRegister.UseVisualStyleBackColor = True
@@ -101,8 +109,8 @@ Partial Class FrmLogin
         Me.AcceptButton = Me.BtnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Firebrick
-        Me.ClientSize = New System.Drawing.Size(333, 206)
+        Me.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.ClientSize = New System.Drawing.Size(362, 238)
         Me.Controls.Add(Me.BtnRegister)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)

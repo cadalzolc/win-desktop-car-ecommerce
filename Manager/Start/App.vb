@@ -5,15 +5,9 @@
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
 
-        'Dim Login As New FrmLogin()
+        Dim Login As New FrmLogin()
 
-        'If Not FrmLogin.ShowDialog() = DialogResult.OK Then Exit Sub
-
-        Session.CurrentUser = New User With {
-            .Username = "admin",
-            .Password = "admin",
-            .ID = 1
-        }
+        If Not FrmLogin.ShowDialog() = DialogResult.OK Then Exit Sub
 
         Application.Run(New FrmDashboard())
 

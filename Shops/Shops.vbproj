@@ -46,11 +46,21 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -72,10 +82,22 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Cards.Designer.vb">
+      <DependentUpon>Cards.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Cards.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Forms\FrmLogin.Designer.vb">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmReportViewer.Designer.vb">
+      <DependentUpon>FrmReportViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmReportViewer.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmShop.vb">
@@ -85,16 +107,40 @@
       <DependentUpon>FrmShop.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAccount.Designer.vb">
+    <Compile Include="Forms\FrmAccount.Designer.vb">
       <DependentUpon>FrmAccount.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmAccount.vb">
+    <Compile Include="Forms\FrmAccount.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRegister.Designer.vb">
+    <Compile Include="Forms\FrmRegister.Designer.vb">
       <DependentUpon>FrmRegister.vb</DependentUpon>
     </Compile>
-    <Compile Include="FrmRegister.vb">
+    <Compile Include="Forms\FrmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLoans.Designer.vb">
+      <DependentUpon>FrmLoans.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLoans.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOrder.Designer.vb">
+      <DependentUpon>FrmOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOrderHistory.Designer.vb">
+      <DependentUpon>FrmOrderHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOrderHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLoansPayment.Designer.vb">
+      <DependentUpon>FrmLoansPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLoansPayment.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Models\Session.vb" />
@@ -117,13 +163,22 @@
     <Compile Include="Start\App.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\Cards.resx">
+      <DependentUpon>Cards.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrder.resx">
+      <DependentUpon>FrmOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmReportViewer.resx">
+      <DependentUpon>FrmReportViewer.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmShop.resx">
       <DependentUpon>FrmShop.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRegister.resx">
+    <EmbeddedResource Include="Forms\FrmRegister.resx">
       <DependentUpon>FrmRegister.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -150,6 +205,13 @@
       <Project>{555c4e00-1fe2-499d-ab15-813ec401b2a1}</Project>
       <Name>Helpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

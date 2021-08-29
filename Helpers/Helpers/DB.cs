@@ -199,6 +199,15 @@ namespace Desktop
             return Cmd;
         }
 
+        public static OleDbCommand Command(string Text, OleDbConnection Con, OleDbTransaction Trans)
+        {
+            var Cmd = new OleDbCommand(Text, Con, Trans)
+            {
+                CommandType = CommandType.Text
+            };
+            return Cmd;
+        }
+
         #endregion
 
     }
