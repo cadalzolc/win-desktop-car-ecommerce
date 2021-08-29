@@ -26,11 +26,11 @@
 
 #Region " Events - Menu "
 
-    Private Sub MenuExit_Click(sender As Object, e As EventArgs) Handles MenuExit.Click
+    Private Sub MenuExit_Click(sender As Object, e As EventArgs)
         Close()
     End Sub
 
-    Private Sub MnuCars_Click(sender As Object, e As EventArgs) Handles MnuCars.Click
+    Private Sub MnuCars_Click(sender As Object, e As EventArgs)
         Close()
     End Sub
 
@@ -54,7 +54,7 @@
     End Sub
 
     Private Sub BtnCustomers_Click(sender As Object, e As EventArgs) Handles BtnCustomers.Click
-
+        TabShow("Customers   x", New FrmCustomers())
     End Sub
 
     Private Sub BtnProducts_Click(sender As Object, e As EventArgs) Handles BtnProducts.Click
@@ -62,11 +62,11 @@
     End Sub
 
     Private Sub BtnOrders_Click(sender As Object, e As EventArgs) Handles BtnOrders.Click
-
+        TabShow("Orders   x", New FrmOrders())
     End Sub
 
     Private Sub BtnPayments_Click(sender As Object, e As EventArgs) Handles BtnPayments.Click
-
+        TabShow("Payments   x", New FrmPayments())
     End Sub
 
 #End Region

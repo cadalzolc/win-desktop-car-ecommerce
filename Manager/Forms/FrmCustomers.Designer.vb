@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class FrmProducts
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class FrmCustomers
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()>
+    <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmProducts
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()>
+    <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.PnlContent = New System.Windows.Forms.Panel()
         Me.PnllBody = New System.Windows.Forms.Panel()
@@ -29,9 +29,7 @@ Partial Class FrmProducts
         Me.LblRecords = New System.Windows.Forms.Label()
         Me.PnlHead = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.BtnDelete = New System.Windows.Forms.Button()
         Me.BtnUpdate = New System.Windows.Forms.Button()
-        Me.BtnCreate = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.TxtSearch = New System.Windows.Forms.TextBox()
@@ -54,8 +52,8 @@ Partial Class FrmProducts
         Me.PnlContent.Location = New System.Drawing.Point(0, 0)
         Me.PnlContent.Name = "PnlContent"
         Me.PnlContent.Padding = New System.Windows.Forms.Padding(6, 5, 6, 5)
-        Me.PnlContent.Size = New System.Drawing.Size(800, 450)
-        Me.PnlContent.TabIndex = 2
+        Me.PnlContent.Size = New System.Drawing.Size(800, 550)
+        Me.PnlContent.TabIndex = 3
         '
         'PnllBody
         '
@@ -65,7 +63,7 @@ Partial Class FrmProducts
         Me.PnllBody.Location = New System.Drawing.Point(6, 38)
         Me.PnllBody.Name = "PnllBody"
         Me.PnllBody.Padding = New System.Windows.Forms.Padding(1)
-        Me.PnllBody.Size = New System.Drawing.Size(788, 375)
+        Me.PnllBody.Size = New System.Drawing.Size(788, 475)
         Me.PnllBody.TabIndex = 3
         '
         'GrdList
@@ -75,14 +73,18 @@ Partial Class FrmProducts
         Me.GrdList.AllowUserToResizeRows = False
         Me.GrdList.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.GrdList.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.GrdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GrdList.ColumnHeadersHeight = 24
+        Me.GrdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.GrdList.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GrdList.Location = New System.Drawing.Point(1, 1)
+        Me.GrdList.MultiSelect = False
         Me.GrdList.Name = "GrdList"
         Me.GrdList.ReadOnly = True
-        Me.GrdList.RowTemplate.Height = 30
+        Me.GrdList.RowHeadersWidth = 24
+        Me.GrdList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.GrdList.RowTemplate.Height = 24
         Me.GrdList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.GrdList.Size = New System.Drawing.Size(786, 373)
+        Me.GrdList.Size = New System.Drawing.Size(786, 473)
         Me.GrdList.TabIndex = 0
         '
         'PnlFooter
@@ -90,7 +92,7 @@ Partial Class FrmProducts
         Me.PnlFooter.BackColor = System.Drawing.Color.WhiteSmoke
         Me.PnlFooter.Controls.Add(Me.LblRecords)
         Me.PnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PnlFooter.Location = New System.Drawing.Point(6, 413)
+        Me.PnlFooter.Location = New System.Drawing.Point(6, 513)
         Me.PnlFooter.Name = "PnlFooter"
         Me.PnlFooter.Size = New System.Drawing.Size(788, 32)
         Me.PnlFooter.TabIndex = 0
@@ -117,49 +119,24 @@ Partial Class FrmProducts
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.BtnDelete)
         Me.Panel2.Controls.Add(Me.BtnUpdate)
-        Me.Panel2.Controls.Add(Me.BtnCreate)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(219, 33)
         Me.Panel2.TabIndex = 1
         '
-        'BtnDelete
-        '
-        Me.BtnDelete.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnDelete.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnDelete.Location = New System.Drawing.Point(145, 0)
-        Me.BtnDelete.Name = "BtnDelete"
-        Me.BtnDelete.Size = New System.Drawing.Size(70, 30)
-        Me.BtnDelete.TabIndex = 2
-        Me.BtnDelete.Text = "DELETE"
-        Me.BtnDelete.UseVisualStyleBackColor = True
-        Me.BtnDelete.Visible = False
-        '
         'BtnUpdate
         '
         Me.BtnUpdate.Cursor = System.Windows.Forms.Cursors.Hand
         Me.BtnUpdate.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnUpdate.Location = New System.Drawing.Point(72, 0)
+        Me.BtnUpdate.Location = New System.Drawing.Point(0, 1)
         Me.BtnUpdate.Name = "BtnUpdate"
-        Me.BtnUpdate.Size = New System.Drawing.Size(70, 30)
+        Me.BtnUpdate.Size = New System.Drawing.Size(70, 31)
         Me.BtnUpdate.TabIndex = 1
         Me.BtnUpdate.Text = "UPDATE"
         Me.BtnUpdate.UseVisualStyleBackColor = True
         Me.BtnUpdate.Visible = False
-        '
-        'BtnCreate
-        '
-        Me.BtnCreate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BtnCreate.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BtnCreate.Location = New System.Drawing.Point(-1, 0)
-        Me.BtnCreate.Name = "BtnCreate"
-        Me.BtnCreate.Size = New System.Drawing.Size(70, 30)
-        Me.BtnCreate.TabIndex = 0
-        Me.BtnCreate.Text = "CREATE"
-        Me.BtnCreate.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -189,18 +166,19 @@ Partial Class FrmProducts
         Me.TxtSearch.Size = New System.Drawing.Size(221, 27)
         Me.TxtSearch.TabIndex = 0
         '
-        'FrmProducts
+        'FrmCustomers
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 550)
         Me.Controls.Add(Me.PnlContent)
         Me.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "FrmProducts"
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "FrmCustomers"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmProducts"
+        Me.Text = "FrmCustomers"
         Me.PnlContent.ResumeLayout(False)
         Me.PnllBody.ResumeLayout(False)
         CType(Me.GrdList, System.ComponentModel.ISupportInitialize).EndInit()
@@ -217,13 +195,11 @@ Partial Class FrmProducts
     Friend WithEvents PnllBody As Panel
     Friend WithEvents GrdList As DataGridView
     Friend WithEvents PnlFooter As Panel
+    Friend WithEvents LblRecords As Label
     Friend WithEvents PnlHead As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents BtnDelete As Button
     Friend WithEvents BtnUpdate As Button
-    Friend WithEvents BtnCreate As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents BtnSearch As Button
     Friend WithEvents TxtSearch As TextBox
-    Friend WithEvents LblRecords As Label
 End Class

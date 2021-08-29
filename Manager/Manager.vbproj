@@ -100,6 +100,24 @@
     <Compile Include="Forms\FrmProductsDialog.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FrmCustomers.Designer.vb">
+      <DependentUpon>FrmCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOrders.Designer.vb">
+      <DependentUpon>FrmOrders.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOrders.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPayments.Designer.vb">
+      <DependentUpon>FrmPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPayments.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\Session.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -120,6 +138,9 @@
     <Compile Include="Start\App.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\FrmCustomers.resx">
+      <DependentUpon>FrmCustomers.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmDashboard.resx">
       <DependentUpon>FrmDashboard.vb</DependentUpon>
     </EmbeddedResource>
