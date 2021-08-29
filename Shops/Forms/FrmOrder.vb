@@ -86,6 +86,7 @@
 
     Private Sub RbtLoan_CheckedChanged(sender As Object, e As EventArgs) Handles RbtLoan.CheckedChanged
         GrpLoan.Enabled = True
+        ComputeRate()
     End Sub
 
 #End Region
@@ -94,7 +95,11 @@
 
     Private Sub NumYears_ValueChanged(sender As Object, e As EventArgs) Handles NumYears.ValueChanged
         If IsLoad.Equals(True) Then Exit Sub
-        Dim Amortization = (Product.Item("Price").ToDouble() / NumYears.Value)
+        ComputeRate()
+    End Sub
+
+    Sub ComputeRate()
+        Dim Amortization = (Product.Item("Price").ToDouble() / (NumYears.Value * 24))
         TxtRate.Tag = Amortization
         TxtRate.Text = Amortization.ToString("P #, ##0.00")
         TxtMonth.Text = NumYears.Value * 12
