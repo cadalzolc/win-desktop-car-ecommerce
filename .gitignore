@@ -1,6 +1,6 @@
 ##Git-Ignore
-/Client/bin
-/Client/obj
+/Shops/bin
+/Shops/obj
 /Manager/bin
 /Manager/obj
 /Helpers/bin
