@@ -34,7 +34,7 @@ Partial Class FrmShop
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BtnSearch = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TxtSearch = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         Me.PnlTop.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -48,7 +48,7 @@ Partial Class FrmShop
         Me.PnlBody.Location = New System.Drawing.Point(0, 42)
         Me.PnlBody.Name = "PnlBody"
         Me.PnlBody.Padding = New System.Windows.Forms.Padding(3)
-        Me.PnlBody.Size = New System.Drawing.Size(784, 423)
+        Me.PnlBody.Size = New System.Drawing.Size(784, 473)
         Me.PnlBody.TabIndex = 0
         '
         'Panel1
@@ -61,7 +61,7 @@ Partial Class FrmShop
         Me.Panel1.Controls.Add(Me.LblUser)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel1.Location = New System.Drawing.Point(0, 465)
+        Me.Panel1.Location = New System.Drawing.Point(0, 515)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(784, 46)
         Me.Panel1.TabIndex = 0
@@ -148,7 +148,7 @@ Partial Class FrmShop
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.BtnSearch)
-        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.TxtSearch)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Right
         Me.Panel2.Location = New System.Drawing.Point(375, 0)
         Me.Panel2.Name = "Panel2"
@@ -165,27 +165,27 @@ Partial Class FrmShop
         Me.BtnSearch.Text = "Search"
         Me.BtnSearch.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'TxtSearch
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(5, 7)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(291, 28)
-        Me.TextBox1.TabIndex = 0
+        Me.TxtSearch.Font = New System.Drawing.Font("Tahoma", 12.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtSearch.Location = New System.Drawing.Point(5, 7)
+        Me.TxtSearch.Name = "TxtSearch"
+        Me.TxtSearch.Size = New System.Drawing.Size(291, 28)
+        Me.TxtSearch.TabIndex = 0
         '
         'FrmShop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(784, 511)
+        Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.PnlBody)
         Me.Controls.Add(Me.PnlTop)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimumSize = New System.Drawing.Size(800, 550)
+        Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "FrmShop"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Online Car Dealer"
@@ -202,7 +202,7 @@ Partial Class FrmShop
     Friend WithEvents PnlTop As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents BtnSearch As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TxtSearch As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents BtnLoans As Button
     Friend WithEvents BtnLogout As Button

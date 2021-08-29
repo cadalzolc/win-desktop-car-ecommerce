@@ -12,10 +12,6 @@
         End Set
     End Property
 
-#End Region
-
-#Region " Properties "
-
     Public Event BuyClick As EventHandler
 
 #End Region

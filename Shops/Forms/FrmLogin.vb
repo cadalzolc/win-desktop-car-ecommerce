@@ -33,7 +33,7 @@
     Function ValidateUser() As Boolean
         Try
             Using Con = DB.Connection
-                Using Cmd = DB.Command("SELECT * FROM Customers_Account WHERE Username=@Username AND Password=@Password", Con)
+                Using Cmd = DB.Command("SELECT * FROM VW_Customers_Account WHERE Username=@Username AND Password=@Password", Con)
                     Cmd.Parameters.AddWithValue("@Username", TxtUsername.Text)
                     Cmd.Parameters.AddWithValue("@Password", TxtPassword.Text)
                     Cmd.ExecuteNonQuery()
@@ -46,9 +46,11 @@
                     End If
 
                     Session.CurrentUser = New User With {
+                        .ID = Row("ID"),
+                        .Name = String.Format("{0} {1}", Row("First_Name"), Row("Last_Name")),
                         .Username = Row("Username"),
                         .Password = Row("Password"),
-                        .ID = Row("ID")
+                        .Customer_ID = Row("Customer_ID")
                     }
                     Return True
                 End Using

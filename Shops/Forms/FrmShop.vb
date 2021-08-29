@@ -2,11 +2,13 @@
 
 #Region " Load Data "
 
-    Sub LoadCars()
-
-        Dim DT_Cars = DB.ToRows("SELECT * FROM VW_Products WHERE Visible = True ORDER BY Name ASC")
+    Sub LoadCars(Optional Filter As String = "")
+        Dim StrQuery = String.Format("SELECT * FROM VW_Products WHERE Visible = True AND Name LIKE '%{0}%' ORDER BY Name ASC", Filter.Replace("'", "''").Replace(";", "").Replace("&", ""))
+        Dim DT_Cars = DB.ToRows(StrQuery)
         Dim Card_X As Integer = 5
         Dim Card_Y As Integer = 5
+
+        PnlBody.Controls.Clear()
 
         For Each Row In DT_Cars
 
@@ -49,7 +51,7 @@
 #Region " Events - Form "
 
     Private Sub FrmShop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LblUser.Text = String.Format("Hi {0}, Welcome Back", Session.CurrentUser.Username).ToUpper()
+        LblUser.Text = String.Format("Hi {0}, Welcome Back", Session.CurrentUser.Name).ToUpper()
         LoadCars()
     End Sub
 
@@ -80,7 +82,7 @@
     End Sub
 
     Private Sub BtnSearch_Click(sender As Object, e As EventArgs) Handles BtnSearch.Click
-
+        LoadCars(TxtSearch.Text)
     End Sub
 
 #End Region
@@ -88,11 +90,10 @@
 #Region " Events - Card "
 
     Private Sub Card_Click(sender As Object, e As EventArgs) Handles BtnLoans.Click
-
         Dim Card = CType(sender, Cards)
-
-        MessageBox.Show(Card.Product.Item("Name"))
-
+        Dim Frm As New FrmOrder()
+        Frm.Product = Card.Product
+        Frm.ShowDialog()
     End Sub
 
 

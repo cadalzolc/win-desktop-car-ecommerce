@@ -51,6 +51,7 @@
     <Compile Include="Helpers\Toast.cs" />
     <Compile Include="Helpers\Util.cs" />
     <Compile Include="Models\KeyValue.cs" />
+    <Compile Include="Models\Payment_Mode.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\Widget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
