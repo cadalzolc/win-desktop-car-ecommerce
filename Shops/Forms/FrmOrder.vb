@@ -80,6 +80,8 @@
         GrpLoan.Enabled = False
         TxtRate.Text = ""
         TxtRate.Tag = ""
+        NumYears.Value = 1
+        TxtMonth.Text = "12"
     End Sub
 
     Private Sub RbtLoan_CheckedChanged(sender As Object, e As EventArgs) Handles RbtLoan.CheckedChanged

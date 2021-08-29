@@ -704,6 +704,8 @@ Partial Class FrmOrder
         Me.TxtMonth.ReadOnly = True
         Me.TxtMonth.Size = New System.Drawing.Size(49, 22)
         Me.TxtMonth.TabIndex = 22
+        Me.TxtMonth.Text = "12"
+        Me.TxtMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'FrmOrder
         '
