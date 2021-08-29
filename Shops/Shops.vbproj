@@ -166,11 +166,20 @@
     <EmbeddedResource Include="Controls\Cards.resx">
       <DependentUpon>Cards.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAccount.resx">
+      <DependentUpon>FrmAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLoans.resx">
+      <DependentUpon>FrmLoans.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmOrder.resx">
       <DependentUpon>FrmOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrderHistory.resx">
+      <DependentUpon>FrmOrderHistory.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmReportViewer.resx">
       <DependentUpon>FrmReportViewer.vb</DependentUpon>

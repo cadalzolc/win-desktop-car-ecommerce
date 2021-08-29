@@ -60,9 +60,8 @@ Partial Class FrmOrder
         Me.RbtLoan = New System.Windows.Forms.RadioButton()
         Me.RbtCash = New System.Windows.Forms.RadioButton()
         Me.GrpPayment = New System.Windows.Forms.GroupBox()
-        Me.TxtAmount = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
-        Me.CboCard = New System.Windows.Forms.ComboBox()
+        Me.CboCard_Alias = New System.Windows.Forms.ComboBox()
         Me.TxtCard_Type = New System.Windows.Forms.TextBox()
         Me.TxtCard_Expiry = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
@@ -76,11 +75,12 @@ Partial Class FrmOrder
         Me.BtnCancel = New System.Windows.Forms.Button()
         Me.LblStock = New System.Windows.Forms.Label()
         Me.GrpLoan = New System.Windows.Forms.GroupBox()
+        Me.TxtMonth = New System.Windows.Forms.TextBox()
         Me.TxtRate = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
         Me.NumYears = New System.Windows.Forms.NumericUpDown()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.TxtMonth = New System.Windows.Forms.TextBox()
+        Me.NumAmount = New System.Windows.Forms.NumericUpDown()
         CType(Me.PicCar, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -88,6 +88,7 @@ Partial Class FrmOrder
         Me.GrpPayment.SuspendLayout()
         Me.GrpLoan.SuspendLayout()
         CType(Me.NumYears, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumAmount, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'PicCar
@@ -166,6 +167,8 @@ Partial Class FrmOrder
         Me.TxtPrice.ReadOnly = True
         Me.TxtPrice.Size = New System.Drawing.Size(133, 22)
         Me.TxtPrice.TabIndex = 8
+        Me.TxtPrice.Tag = ""
+        Me.TxtPrice.Text = "0.00"
         '
         'Label4
         '
@@ -336,6 +339,7 @@ Partial Class FrmOrder
         '
         'TxtProvince
         '
+        Me.TxtProvince.AccessibleDescription = "Required"
         Me.TxtProvince.BackColor = System.Drawing.Color.White
         Me.TxtProvince.Location = New System.Drawing.Point(103, 88)
         Me.TxtProvince.MaxLength = 35
@@ -345,6 +349,7 @@ Partial Class FrmOrder
         '
         'TxtCity
         '
+        Me.TxtCity.AccessibleDescription = "Required"
         Me.TxtCity.BackColor = System.Drawing.Color.White
         Me.TxtCity.Location = New System.Drawing.Point(103, 60)
         Me.TxtCity.MaxLength = 35
@@ -364,6 +369,7 @@ Partial Class FrmOrder
         '
         'TxtZip_Code
         '
+        Me.TxtZip_Code.AccessibleDescription = "Required"
         Me.TxtZip_Code.BackColor = System.Drawing.Color.White
         Me.TxtZip_Code.Location = New System.Drawing.Point(103, 144)
         Me.TxtZip_Code.MaxLength = 10
@@ -383,6 +389,7 @@ Partial Class FrmOrder
         '
         'TxtCountry
         '
+        Me.TxtCountry.AccessibleDescription = "Required"
         Me.TxtCountry.BackColor = System.Drawing.Color.White
         Me.TxtCountry.Location = New System.Drawing.Point(103, 116)
         Me.TxtCountry.MaxLength = 35
@@ -402,6 +409,7 @@ Partial Class FrmOrder
         '
         'TxtAddress
         '
+        Me.TxtAddress.AccessibleDescription = "Required"
         Me.TxtAddress.BackColor = System.Drawing.Color.White
         Me.TxtAddress.Location = New System.Drawing.Point(103, 31)
         Me.TxtAddress.MaxLength = 35
@@ -464,9 +472,9 @@ Partial Class FrmOrder
         '
         'GrpPayment
         '
-        Me.GrpPayment.Controls.Add(Me.TxtAmount)
+        Me.GrpPayment.Controls.Add(Me.NumAmount)
         Me.GrpPayment.Controls.Add(Me.Label21)
-        Me.GrpPayment.Controls.Add(Me.CboCard)
+        Me.GrpPayment.Controls.Add(Me.CboCard_Alias)
         Me.GrpPayment.Controls.Add(Me.TxtCard_Type)
         Me.GrpPayment.Controls.Add(Me.TxtCard_Expiry)
         Me.GrpPayment.Controls.Add(Me.Label16)
@@ -483,17 +491,6 @@ Partial Class FrmOrder
         Me.GrpPayment.TabStop = False
         Me.GrpPayment.Text = "Payment Method"
         '
-        'TxtAmount
-        '
-        Me.TxtAmount.BackColor = System.Drawing.Color.White
-        Me.TxtAmount.Location = New System.Drawing.Point(114, 169)
-        Me.TxtAmount.MaxLength = 35
-        Me.TxtAmount.Name = "TxtAmount"
-        Me.TxtAmount.Size = New System.Drawing.Size(146, 22)
-        Me.TxtAmount.TabIndex = 5
-        Me.TxtAmount.Text = "0"
-        Me.TxtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
         'Label21
         '
         Me.Label21.AutoSize = True
@@ -504,17 +501,19 @@ Partial Class FrmOrder
         Me.Label21.TabIndex = 26
         Me.Label21.Text = "Amount"
         '
-        'CboCard
+        'CboCard_Alias
         '
-        Me.CboCard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.CboCard.FormattingEnabled = True
-        Me.CboCard.Location = New System.Drawing.Point(114, 27)
-        Me.CboCard.Name = "CboCard"
-        Me.CboCard.Size = New System.Drawing.Size(146, 22)
-        Me.CboCard.TabIndex = 0
+        Me.CboCard_Alias.AccessibleDescription = "Required"
+        Me.CboCard_Alias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.CboCard_Alias.FormattingEnabled = True
+        Me.CboCard_Alias.Location = New System.Drawing.Point(114, 27)
+        Me.CboCard_Alias.Name = "CboCard_Alias"
+        Me.CboCard_Alias.Size = New System.Drawing.Size(146, 22)
+        Me.CboCard_Alias.TabIndex = 0
         '
         'TxtCard_Type
         '
+        Me.TxtCard_Type.AccessibleDescription = "Required"
         Me.TxtCard_Type.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtCard_Type.Location = New System.Drawing.Point(114, 55)
         Me.TxtCard_Type.MaxLength = 20
@@ -525,6 +524,7 @@ Partial Class FrmOrder
         '
         'TxtCard_Expiry
         '
+        Me.TxtCard_Expiry.AccessibleDescription = "Required"
         Me.TxtCard_Expiry.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtCard_Expiry.Location = New System.Drawing.Point(114, 83)
         Me.TxtCard_Expiry.MaxLength = 6
@@ -555,6 +555,7 @@ Partial Class FrmOrder
         '
         'TxtCard_Pin
         '
+        Me.TxtCard_Pin.AccessibleDescription = "Required"
         Me.TxtCard_Pin.BackColor = System.Drawing.Color.White
         Me.TxtCard_Pin.Location = New System.Drawing.Point(114, 139)
         Me.TxtCard_Pin.MaxLength = 6
@@ -566,6 +567,7 @@ Partial Class FrmOrder
         '
         'TxtCard_No
         '
+        Me.TxtCard_No.AccessibleDescription = "Required"
         Me.TxtCard_No.BackColor = System.Drawing.Color.WhiteSmoke
         Me.TxtCard_No.Location = New System.Drawing.Point(114, 111)
         Me.TxtCard_No.MaxLength = 20
@@ -654,6 +656,17 @@ Partial Class FrmOrder
         Me.GrpLoan.TabStop = False
         Me.GrpLoan.Text = "Loan Amortization (Monthly)"
         '
+        'TxtMonth
+        '
+        Me.TxtMonth.BackColor = System.Drawing.Color.WhiteSmoke
+        Me.TxtMonth.Location = New System.Drawing.Point(208, 25)
+        Me.TxtMonth.Name = "TxtMonth"
+        Me.TxtMonth.ReadOnly = True
+        Me.TxtMonth.Size = New System.Drawing.Size(49, 22)
+        Me.TxtMonth.TabIndex = 22
+        Me.TxtMonth.Text = "12"
+        Me.TxtMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'TxtRate
         '
         Me.TxtRate.BackColor = System.Drawing.Color.WhiteSmoke
@@ -663,6 +676,8 @@ Partial Class FrmOrder
         Me.TxtRate.ReadOnly = True
         Me.TxtRate.Size = New System.Drawing.Size(146, 22)
         Me.TxtRate.TabIndex = 20
+        Me.TxtRate.Tag = "0"
+        Me.TxtRate.Text = "0.00"
         Me.TxtRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Label23
@@ -696,16 +711,18 @@ Partial Class FrmOrder
         Me.Label22.TabIndex = 18
         Me.Label22.Text = "Years"
         '
-        'TxtMonth
+        'NumAmount
         '
-        Me.TxtMonth.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TxtMonth.Location = New System.Drawing.Point(208, 25)
-        Me.TxtMonth.Name = "TxtMonth"
-        Me.TxtMonth.ReadOnly = True
-        Me.TxtMonth.Size = New System.Drawing.Size(49, 22)
-        Me.TxtMonth.TabIndex = 22
-        Me.TxtMonth.Text = "12"
-        Me.TxtMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.NumAmount.DecimalPlaces = 2
+        Me.NumAmount.Increment = New Decimal(New Integer() {10000, 0, 0, 0})
+        Me.NumAmount.Location = New System.Drawing.Point(114, 168)
+        Me.NumAmount.Maximum = New Decimal(New Integer() {9999999, 0, 0, 0})
+        Me.NumAmount.Name = "NumAmount"
+        Me.NumAmount.Size = New System.Drawing.Size(143, 22)
+        Me.NumAmount.TabIndex = 27
+        Me.NumAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.NumAmount.ThousandsSeparator = True
+        Me.NumAmount.UpDownAlign = System.Windows.Forms.LeftRightAlignment.Left
         '
         'FrmOrder
         '
@@ -754,6 +771,7 @@ Partial Class FrmOrder
         Me.GrpLoan.ResumeLayout(False)
         Me.GrpLoan.PerformLayout()
         CType(Me.NumYears, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumAmount, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -797,8 +815,7 @@ Partial Class FrmOrder
     Friend WithEvents RbtCash As RadioButton
     Friend WithEvents GrpPayment As GroupBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents TxtAmount As TextBox
-    Friend WithEvents CboCard As ComboBox
+    Friend WithEvents CboCard_Alias As ComboBox
     Friend WithEvents TxtCard_Type As TextBox
     Friend WithEvents TxtCard_Expiry As TextBox
     Friend WithEvents Label16 As Label
@@ -817,4 +834,5 @@ Partial Class FrmOrder
     Friend WithEvents NumYears As NumericUpDown
     Friend WithEvents Label22 As Label
     Friend WithEvents TxtMonth As TextBox
+    Friend WithEvents NumAmount As NumericUpDown
 End Class

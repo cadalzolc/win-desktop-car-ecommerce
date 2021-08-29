@@ -27,6 +27,15 @@ namespace Desktop
 
         #endregion
 
+        #region " To Bit "
+
+        public static int ToBit(this bool obj)
+        {
+            return obj == true ? 1 : 0;
+        }
+
+        #endregion
+
         #region " To Long "
 
         public static long ToLong(this object obj, long DefaultValue = 0)
@@ -41,6 +50,11 @@ namespace Desktop
         public static double ToDouble(this object obj, double DefaultValue = 0)
         {
             return obj == null ? DefaultValue : Convert.ToDouble(obj);
+        }
+
+        public static double ToDouble(this string obj, double DefaultValue = 0)
+        {
+            return obj == "" ? DefaultValue : Convert.ToDouble(obj);
         }
 
         #endregion

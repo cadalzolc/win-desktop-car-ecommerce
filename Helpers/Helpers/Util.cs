@@ -15,7 +15,7 @@ namespace Desktop
 
         #region " Controls "
 
-        public static IEnumerable<Widget> Controls(Form Containers)
+        public static IEnumerable<Widget> Controls(Form Containers, string Marked = "")
         {
             var Arr = new List<Widget>();
             foreach (Control Ctl in Containers.Controls)
@@ -23,15 +23,16 @@ namespace Desktop
                 switch (Ctl.GetType().Name)
                 {
                     case "GroupBox":
-                        var ArrGP = Controls(Ctl as GroupBox);
+                        var ArrGP = Controls(Ctl as GroupBox, Marked);
                         Arr.AddRange(ArrGP);
                         break;
                     case "Panel":
-                        var ArrPL = Controls(Ctl as Panel);
+                        var ArrPL = Controls(Ctl as Panel, Marked);
                         Arr.AddRange(ArrPL);
                         break;
                     case "TextBox":
                     case "ComboBox":
+                        if (!Ctl.AccessibleDescription.ToNullString().Equals(Marked)) continue;
                         Arr.Add(new Widget(Ctl.TabIndex.ToString(), Ctl));
                         break;
                 }
@@ -39,7 +40,7 @@ namespace Desktop
             return Arr.OrderBy(r => r.Control_Index);
         }
 
-        public static IEnumerable<Widget> Controls(Control Containers)
+        public static IEnumerable<Widget> Controls(Control Containers, string Marked = "")
         {
             var Arr = new List<Widget>();
             foreach (Control Ctl in Containers.Controls)
@@ -56,6 +57,7 @@ namespace Desktop
                         break;
                     case "TextBox":
                     case "ComboBox":
+                        if (!Ctl.AccessibleDescription.ToNullString().Equals(Marked)) continue;
                         Arr.Add(new Widget(string.Format("{0}{1}", Containers.TabIndex, Ctl.TabIndex), Ctl));
                         break;
                 }

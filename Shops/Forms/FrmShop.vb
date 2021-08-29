@@ -64,15 +64,18 @@
 #Region " Events - Button "
 
     Private Sub BtnLoans_Click(sender As Object, e As EventArgs) Handles BtnLoans.Click
-
+        Dim Frm As New FrmLoans()
+        Frm.ShowDialog()
     End Sub
 
     Private Sub BtnOrder_Click(sender As Object, e As EventArgs) Handles BtnOrder.Click
-
+        Dim Frm As New FrmOrderHistory()
+        Frm.ShowDialog()
     End Sub
 
     Private Sub BtnAccount_Click(sender As Object, e As EventArgs) Handles BtnAccount.Click
-
+        Dim Frm As New FrmAccount()
+        Frm.ShowDialog()
     End Sub
 
     Private Sub BtnLogout_Click(sender As Object, e As EventArgs) Handles BtnLogout.Click
@@ -95,9 +98,10 @@
         Dim Frm As New FrmOrder With {
             .Product = Card.Product
         }
-        Frm.ShowDialog()
+        If Frm.ShowDialog() = DialogResult.OK Then
+            LoadCars()
+        End If
     End Sub
-
 
 #End Region
 
