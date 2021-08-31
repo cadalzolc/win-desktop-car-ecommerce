@@ -54,7 +54,6 @@
 
     End Sub
 
-
     Sub AddBrand(BrandID As Integer, BrandName As String)
         If DicBrands.ContainsKey(BrandID).Equals(True) Then Exit Sub
         DicBrands.Add(BrandID, BrandName)
@@ -95,13 +94,10 @@
         LoadCars()
         LoadTree()
     End Sub
+
     Private Sub FrmShop_SizeChanged(sender As Object, e As EventArgs) Handles MyBase.SizeChanged
         LoadCars(TxtSearch.Text)
     End Sub
-
-#End Region
-
-#Region " Events - TextBox "
 
 #End Region
 
@@ -143,6 +139,13 @@
             .Product = Card.Product
         }
         If Frm.ShowDialog() = DialogResult.OK Then
+
+            Dim FrmReport As New FrmReportViewer()
+            Dim Params As New Dictionary(Of String, Object) From {
+                {"@ID", Frm.Return_ID}
+            }
+
+            FrmReport.ShowReport("RPT_Order", Params)
             LoadCars()
         End If
     End Sub

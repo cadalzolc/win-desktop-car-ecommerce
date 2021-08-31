@@ -1,3 +1,5 @@
+D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Reports\RPT_Order.rpt
+D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Reports\RPT_Order1.vb
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Desktop.Shops.exe.config
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Desktop.Shops.exe
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Desktop.Shops.pdb
@@ -7,7 +9,6 @@ D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportSource.
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.Shared.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.Windows.Forms.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Desktop.Helpers.dll
-D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\FlashControlV71.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
@@ -19,14 +20,16 @@ D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServ
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\ShockwaveFlashObjects.dll
+D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\AxShockwaveFlashObjects.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\ShockwaveFlashObjects.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\stdole.dll
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\bin\Debug\Desktop.Helpers.pdb
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Shops.vbprojAssemblyReference.cache
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.Cards.resources
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmAccount.resources
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmLoans.resources
+D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmLoansPayment.resources
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmLogin.resources
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmOrder.resources
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmOrderHistory.resources
@@ -40,4 +43,3 @@ D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Shops.vbproj.CopyComplete
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.exe
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.xml
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.pdb
-D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmLoansPayment.resources

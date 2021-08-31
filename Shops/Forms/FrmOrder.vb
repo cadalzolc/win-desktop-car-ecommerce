@@ -6,6 +6,16 @@ Public Class FrmOrder
     Public Product As New Dictionary(Of String, String)
     Private IsLoad As Boolean = True
     Private Customer_ID As Integer = 0
+    Private PVT_RetID As Integer = 0
+
+    Public Property Return_ID() As Integer
+        Get
+            Return PVT_RetID
+        End Get
+        Set(ByVal value As Integer)
+            PVT_RetID = value
+        End Set
+    End Property
 
 #Region " Load Data "
 
@@ -274,6 +284,8 @@ Public Class FrmOrder
                 Using Cmd = DB.Command(String.Format("UPDATE Products SET Stock = Stock - 1 WHERE ID = {0}", Product.Item("ID").ToInt()), Con, Trans)
                     Cmd.ExecuteNonQuery()
                 End Using
+
+                PVT_RetID = Order_ID
 
                 Trans.Commit()
                 Toast.Message("Your order was successfully processed!")
