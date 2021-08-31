@@ -59,6 +59,20 @@ namespace Desktop
 
         #endregion
 
+        #region " To Decimal "
+
+        public static decimal Decimal(this object obj, decimal DefaultValue = 0)
+        {
+            return obj == null ? DefaultValue : Convert.ToDecimal(obj);
+        }
+
+        public static decimal Decimal(this string obj, decimal DefaultValue = 0)
+        {
+            return obj == "" ? DefaultValue : Convert.ToDecimal(obj);
+        }
+
+        #endregion
+
         #region " To Boolean "
 
         public static bool ToBolean(this object obj, bool DefaultValue = false)

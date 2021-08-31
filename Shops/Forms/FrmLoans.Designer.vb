@@ -70,6 +70,8 @@ Partial Class FrmLoans
         '
         'BtnPay
         '
+        Me.BtnPay.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnPay.Enabled = False
         Me.BtnPay.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BtnPay.Location = New System.Drawing.Point(3, 5)
         Me.BtnPay.Name = "BtnPay"

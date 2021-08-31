@@ -2,6 +2,8 @@
 
 Public Class FrmLoans
 
+    Public Loan_Selected As New Dictionary(Of String, String)
+
 #Region " Load Grid "
 
     Sub LoadGrid()
@@ -57,7 +59,48 @@ Public Class FrmLoans
 #Region " Events - Button "
 
     Private Sub BtnPay_Click(sender As Object, e As EventArgs) Handles BtnPay.Click
+
+        If Loan_Selected.Count().Equals(0) Then
+            Toast.Required("No loan selectedtion was selected")
+            Exit Sub
+        End If
+
+        Dim Frm As New FrmLoansPayment()
+        Frm.Loan = Loan_Selected
+
+        If Not Frm.ShowDialog() = DialogResult.OK Then Exit Sub
+
         LoadGrid()
+    End Sub
+
+#End Region
+
+#Region " Events - Grid "
+
+    Private Sub GrdList_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles GrdList.CellMouseClick
+
+        Loan_Selected.Clear()
+
+        If e.RowIndex < 0 Then Exit Sub
+
+        Dim HasRemMonth As Integer = GrdList.Rows(e.RowIndex).Cells("Months_Remaining").Value
+
+        If HasRemMonth.Equals(0) Then
+            BtnPay.Enabled = False
+            Exit Sub
+        End If
+
+        Loan_Selected.Add("ID", GrdList.Rows(e.RowIndex).Cells("ID").Value)
+        Loan_Selected.Add("Order_ID", GrdList.Rows(e.RowIndex).Cells("Order_ID").Value)
+        Loan_Selected.Add("Product", GrdList.Rows(e.RowIndex).Cells("Product").Value)
+        Loan_Selected.Add("First_Name", GrdList.Rows(e.RowIndex).Cells("First_Name").Value)
+        Loan_Selected.Add("Last_Name", GrdList.Rows(e.RowIndex).Cells("Last_Name").Value)
+        Loan_Selected.Add("Amortization", GrdList.Rows(e.RowIndex).Cells("Amortization").Value)
+        Loan_Selected.Add("Total", GrdList.Rows(e.RowIndex).Cells("Total").Value)
+        Loan_Selected.Add("Payment", GrdList.Rows(e.RowIndex).Cells("Payment").Value)
+        Loan_Selected.Add("Balance", GrdList.Rows(e.RowIndex).Cells("Balance").Value)
+        Loan_Selected.Add("Months_Remaining", GrdList.Rows(e.RowIndex).Cells("Months_Remaining").Value)
+        BtnPay.Enabled = True
     End Sub
 
 #End Region

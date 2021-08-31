@@ -64,6 +64,7 @@
             SL_Prod.Add("Price", .Cells("Price").Value)
             SL_Prod.Add("Stock", .Cells("Stock").Value)
             SL_Prod.Add("Visible", .Cells("Visible").Value)
+            SL_Prod.Add("Image", .Cells("Image").Value)
         End With
 
         BtnUpdate.Visible = True

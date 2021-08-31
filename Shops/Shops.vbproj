@@ -172,6 +172,9 @@
     <EmbeddedResource Include="Forms\FrmLoans.resx">
       <DependentUpon>FrmLoans.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLoansPayment.resx">
+      <DependentUpon>FrmLoansPayment.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
     </EmbeddedResource>

@@ -4,10 +4,26 @@
 
 #End Region
 
+#Region " Load Data "
+
+    Sub LoadSummary()
+        Dim Row = DB.ToRow("SELECT * FROM VW_Summary")
+        If IsNothing(Row) Then Exit Sub
+        LblProduct.Text = Row("Products")
+        LblStock.Text = Row("Stock")
+        LblSold.Text = Row("Sold")
+        LblCustomer.Text = Row("Customer")
+        LblSales.Text = Row("Sales").ToString().ToDouble().ToString("P #, ##0.00")
+        LblOrder.Text = Row("Sold")
+    End Sub
+
+#End Region
+
 #Region " Events - Form "
 
     Private Sub FrmDashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MnuEncoder.Text = String.Format("Logged In User: {0}", Session.CurrentUser.Username)
+        LoadSummary()
     End Sub
 
     Private Sub FrmDashboard_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing

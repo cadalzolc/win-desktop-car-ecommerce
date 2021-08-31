@@ -49,7 +49,6 @@ Public Class FrmOrderHistory
             End Select
             Col.HeaderText = Col.HeaderText.Replace("_", " ").ToUpper()
         Next
-
     End Sub
 
 #End Region

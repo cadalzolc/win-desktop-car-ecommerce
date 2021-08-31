@@ -40,3 +40,4 @@ D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Shops.vbproj.CopyComplete
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.exe
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.xml
 D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.pdb
+D:\WORKSPACE\URAPZ\Case Study\dev\Shops\obj\Debug\Desktop.Shops.FrmLoansPayment.resources

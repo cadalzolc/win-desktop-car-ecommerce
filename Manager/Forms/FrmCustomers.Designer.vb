@@ -30,7 +30,7 @@ Partial Class FrmCustomers
         Me.PnlHead = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.BtnUpdate = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PnlForm = New System.Windows.Forms.Panel()
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.TxtSearch = New System.Windows.Forms.TextBox()
         Me.PnlContent.SuspendLayout()
@@ -39,7 +39,7 @@ Partial Class FrmCustomers
         Me.PnlFooter.SuspendLayout()
         Me.PnlHead.SuspendLayout()
         Me.Panel2.SuspendLayout()
-        Me.Panel1.SuspendLayout()
+        Me.PnlForm.SuspendLayout()
         Me.SuspendLayout()
         '
         'PnlContent
@@ -110,7 +110,7 @@ Partial Class FrmCustomers
         'PnlHead
         '
         Me.PnlHead.Controls.Add(Me.Panel2)
-        Me.PnlHead.Controls.Add(Me.Panel1)
+        Me.PnlHead.Controls.Add(Me.PnlForm)
         Me.PnlHead.Dock = System.Windows.Forms.DockStyle.Top
         Me.PnlHead.Location = New System.Drawing.Point(6, 5)
         Me.PnlHead.Name = "PnlHead"
@@ -138,15 +138,15 @@ Partial Class FrmCustomers
         Me.BtnUpdate.UseVisualStyleBackColor = True
         Me.BtnUpdate.Visible = False
         '
-        'Panel1
+        'PnlForm
         '
-        Me.Panel1.Controls.Add(Me.BtnSearch)
-        Me.Panel1.Controls.Add(Me.TxtSearch)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel1.Location = New System.Drawing.Point(475, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(313, 33)
-        Me.Panel1.TabIndex = 0
+        Me.PnlForm.Controls.Add(Me.BtnSearch)
+        Me.PnlForm.Controls.Add(Me.TxtSearch)
+        Me.PnlForm.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PnlForm.Location = New System.Drawing.Point(475, 0)
+        Me.PnlForm.Name = "PnlForm"
+        Me.PnlForm.Size = New System.Drawing.Size(313, 33)
+        Me.PnlForm.TabIndex = 0
         '
         'BtnSearch
         '
@@ -185,8 +185,8 @@ Partial Class FrmCustomers
         Me.PnlFooter.ResumeLayout(False)
         Me.PnlHead.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.PnlForm.ResumeLayout(False)
+        Me.PnlForm.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -199,7 +199,7 @@ Partial Class FrmCustomers
     Friend WithEvents PnlHead As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents BtnUpdate As Button
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents PnlForm As Panel
     Friend WithEvents BtnSearch As Button
     Friend WithEvents TxtSearch As TextBox
 End Class
