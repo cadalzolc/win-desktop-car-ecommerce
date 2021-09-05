@@ -88,6 +88,12 @@
     <Compile Include="Forms\FrmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FrmOrdersDialog.Designer.vb">
+      <DependentUpon>FrmOrdersDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOrdersDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\FrmProducts.Designer.vb">
       <DependentUpon>FrmProducts.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOrdersDialog.resx">
+      <DependentUpon>FrmOrdersDialog.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmOrders.resx">
       <DependentUpon>FrmOrders.vb</DependentUpon>

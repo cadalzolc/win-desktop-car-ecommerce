@@ -80,13 +80,50 @@ Public Class FrmOrders
         LoadGrid(TxtSearch.Text)
     End Sub
 
+    Private Sub BtnShipment_Click(sender As Object, e As EventArgs) Handles BtnShipment.Click
+        If SL_Item.Count().Equals(0) Then
+            Toast.Required("Please select order")
+            Exit Sub
+        End If
+
+        Dim Frm As New FrmOrdersDialog With {
+            .Shipments = SL_Item
+        }
+        If Not Frm.ShowDialog() = DialogResult.OK Then Exit Sub
+
+        BtnShipment.Visible = False
+        LoadGrid()
+
+    End Sub
+
 
 #End Region
 
 #Region " Events - Grid "
 
     Private Sub GrdList_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles GrdList.CellMouseClick
+        SL_Item.Clear()
+        BtnShipment.Visible = False
 
+        If e.RowIndex < 0 Then Exit Sub
+
+        Dim IsDelivered = Convert.ToBoolean(GrdList.Rows(e.RowIndex).Cells("Delivered").Value)
+
+        If IsDelivered.Equals(True) Then Exit Sub
+
+        SL_Item.Add("ID", GrdList.Rows(e.RowIndex).Cells("ID").Value)
+        SL_Item.Add("Order_No", GrdList.Rows(e.RowIndex).Cells("Order_No").Value)
+        SL_Item.Add("Trans_Date", GrdList.Rows(e.RowIndex).Cells("Trans_Date").Value)
+        SL_Item.Add("Product", GrdList.Rows(e.RowIndex).Cells("Name").Value)
+        SL_Item.Add("Customer", String.Format("{0} {1}", GrdList.Rows(e.RowIndex).Cells("First_Name").Value, GrdList.Rows(e.RowIndex).Cells("Last_Name").Value))
+        SL_Item.Add("Address", GrdList.Rows(e.RowIndex).Cells("Address").Value)
+        SL_Item.Add("City", GrdList.Rows(e.RowIndex).Cells("City").Value)
+        SL_Item.Add("Province", GrdList.Rows(e.RowIndex).Cells("State").Value)
+        SL_Item.Add("Country", GrdList.Rows(e.RowIndex).Cells("Country").Value)
+        SL_Item.Add("Zip_Code", GrdList.Rows(e.RowIndex).Cells("Zip_Code").Value)
+        SL_Item.Add("Shipment_ID", GrdList.Rows(e.RowIndex).Cells("Shipment_ID").Value)
+
+        BtnShipment.Visible = True
     End Sub
 
 #End Region

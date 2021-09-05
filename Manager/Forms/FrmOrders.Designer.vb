@@ -24,6 +24,7 @@ Partial Class FrmOrders
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmOrders))
         Me.PnlHead = New System.Windows.Forms.Panel()
+        Me.BtnShipment = New System.Windows.Forms.Button()
         Me.PnlForm = New System.Windows.Forms.Panel()
         Me.BtnSearch = New System.Windows.Forms.Button()
         Me.TxtSearch = New System.Windows.Forms.TextBox()
@@ -31,8 +32,8 @@ Partial Class FrmOrders
         Me.PnllBody = New System.Windows.Forms.Panel()
         Me.GrdList = New System.Windows.Forms.DataGridView()
         Me.PnlFooter = New System.Windows.Forms.Panel()
-        Me.LblRecords = New System.Windows.Forms.Label()
         Me.LblTotal = New System.Windows.Forms.Label()
+        Me.LblRecords = New System.Windows.Forms.Label()
         Me.PnlHead.SuspendLayout()
         Me.PnlForm.SuspendLayout()
         Me.PnlContent.SuspendLayout()
@@ -43,12 +44,25 @@ Partial Class FrmOrders
         '
         'PnlHead
         '
+        Me.PnlHead.Controls.Add(Me.BtnShipment)
         Me.PnlHead.Controls.Add(Me.PnlForm)
         Me.PnlHead.Dock = System.Windows.Forms.DockStyle.Top
         Me.PnlHead.Location = New System.Drawing.Point(6, 5)
         Me.PnlHead.Name = "PnlHead"
         Me.PnlHead.Size = New System.Drawing.Size(788, 33)
         Me.PnlHead.TabIndex = 0
+        '
+        'BtnShipment
+        '
+        Me.BtnShipment.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BtnShipment.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BtnShipment.Location = New System.Drawing.Point(-1, 0)
+        Me.BtnShipment.Name = "BtnShipment"
+        Me.BtnShipment.Size = New System.Drawing.Size(91, 30)
+        Me.BtnShipment.TabIndex = 2
+        Me.BtnShipment.Text = "SHIPMENT"
+        Me.BtnShipment.UseVisualStyleBackColor = True
+        Me.BtnShipment.Visible = False
         '
         'PnlForm
         '
@@ -134,16 +148,6 @@ Partial Class FrmOrders
         Me.PnlFooter.Size = New System.Drawing.Size(788, 32)
         Me.PnlFooter.TabIndex = 0
         '
-        'LblRecords
-        '
-        Me.LblRecords.Dock = System.Windows.Forms.DockStyle.Left
-        Me.LblRecords.Location = New System.Drawing.Point(0, 0)
-        Me.LblRecords.Name = "LblRecords"
-        Me.LblRecords.Size = New System.Drawing.Size(157, 32)
-        Me.LblRecords.TabIndex = 0
-        Me.LblRecords.Text = "Records Found: "
-        Me.LblRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
         'LblTotal
         '
         Me.LblTotal.Dock = System.Windows.Forms.DockStyle.Right
@@ -153,6 +157,16 @@ Partial Class FrmOrders
         Me.LblTotal.Size = New System.Drawing.Size(313, 32)
         Me.LblTotal.TabIndex = 1
         Me.LblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LblRecords
+        '
+        Me.LblRecords.Dock = System.Windows.Forms.DockStyle.Left
+        Me.LblRecords.Location = New System.Drawing.Point(0, 0)
+        Me.LblRecords.Name = "LblRecords"
+        Me.LblRecords.Size = New System.Drawing.Size(157, 32)
+        Me.LblRecords.TabIndex = 0
+        Me.LblRecords.Text = "Records Found: "
+        Me.LblRecords.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'FrmOrders
         '
@@ -187,4 +201,5 @@ Partial Class FrmOrders
     Friend WithEvents PnlFooter As Panel
     Friend WithEvents LblRecords As Label
     Friend WithEvents LblTotal As Label
+    Friend WithEvents BtnShipment As Button
 End Class
