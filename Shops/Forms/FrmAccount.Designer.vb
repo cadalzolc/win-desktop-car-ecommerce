@@ -50,9 +50,9 @@ Partial Class FrmAccount
         Me.BtnUserChange = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.GrdList = New System.Windows.Forms.DataGridView()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.GrdList = New System.Windows.Forms.DataGridView()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -332,6 +332,23 @@ Partial Class FrmAccount
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Payment Methods"
         '
+        'GrdList
+        '
+        Me.GrdList.AllowUserToAddRows = False
+        Me.GrdList.AllowUserToDeleteRows = False
+        Me.GrdList.AllowUserToResizeRows = False
+        Me.GrdList.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.GrdList.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.GrdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.GrdList.Location = New System.Drawing.Point(6, 61)
+        Me.GrdList.MultiSelect = False
+        Me.GrdList.Name = "GrdList"
+        Me.GrdList.ReadOnly = True
+        Me.GrdList.RowHeadersWidth = 30
+        Me.GrdList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.GrdList.Size = New System.Drawing.Size(750, 161)
+        Me.GrdList.TabIndex = 10
+        '
         'Button3
         '
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
@@ -353,23 +370,6 @@ Partial Class FrmAccount
         Me.Button2.Text = "Update"
         Me.Button2.UseVisualStyleBackColor = True
         Me.Button2.Visible = False
-        '
-        'GrdList
-        '
-        Me.GrdList.AllowUserToAddRows = False
-        Me.GrdList.AllowUserToDeleteRows = False
-        Me.GrdList.AllowUserToResizeRows = False
-        Me.GrdList.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.GrdList.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.GrdList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.GrdList.Location = New System.Drawing.Point(6, 61)
-        Me.GrdList.MultiSelect = False
-        Me.GrdList.Name = "GrdList"
-        Me.GrdList.ReadOnly = True
-        Me.GrdList.RowHeadersWidth = 30
-        Me.GrdList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.GrdList.Size = New System.Drawing.Size(750, 161)
-        Me.GrdList.TabIndex = 10
         '
         'FrmAccount
         '

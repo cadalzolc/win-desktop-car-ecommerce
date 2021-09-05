@@ -76,6 +76,17 @@
         LoadGrid()
     End Sub
 
+    Private Sub BtnUserChange_Click(sender As Object, e As EventArgs) Handles BtnUserChange.Click
+        Dim Params = New Dictionary(Of String, String) From {
+            {"ID", Account("ID")},
+            {"Username", Account("Username")}
+        }
+        Dim Frm As New FrmAccountCred With {
+            .Cred = Params
+        }
+        Frm.ShowDialog()
+    End Sub
+
 #End Region
 
 #Region " Events - Button "

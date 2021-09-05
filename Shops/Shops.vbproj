@@ -143,6 +143,12 @@
     <Compile Include="Forms\FrmLoansPayment.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\FrmAccountCred.Designer.vb">
+      <DependentUpon>FrmAccountCred.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmAccountCred.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Models\Session.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmRegister.resx">
       <DependentUpon>FrmRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmAccountCred.resx">
+      <DependentUpon>FrmAccountCred.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
